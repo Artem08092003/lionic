@@ -1,0 +1,481 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: local('OpenSans-Light'),
+        url('../fonts/OpenSansLight.woff2') format('woff2'),
+        url('../fonts/OpenSansLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: local('OpenSans-Regular'),
+        url('../fonts/OpenSansRegular.woff2') format('woff2'),
+        url('../fonts/OpenSansRegular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: local('OpenSans-SemiBold'),
+        url('../fonts/OpenSansSemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSansSemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+/* для всех */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 1200px;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 15px;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    min-width: 150px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #3172B9;
+    text-transform: uppercase;
+}
+
+.h2 {
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 130%;
+    color: #1C1C1C;
+}
+
+.section-desc {
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #787878;
+}
+
+.section {
+    padding-top: 87px;
+    padding-bottom: 160px;
+    border-bottom: 1px solid #DADADA;
+    ;
+}
+
+.flex {
+    display: flex;
+}
+
+/* header*/
+.header {
+    padding: 36px 0;
+    border-bottom: 1px solid #DADADA;
+}
+
+.container-header {
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: auto;
+}
+
+.header-nav-menu {
+    margin-right: 52px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1C1C1C;
+}
+
+.header-nav-item:not(:last-child) {
+    margin-right: 52px;
+}
+
+.header-button {
+    min-width: 150px;
+    padding: 15px 35px;
+    border-radius: 3px;
+}
+
+/* hero*/
+.hero-section-main {
+    padding: 100px 0;
+    background-image: url(../img/hero-image-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-content {
+    max-width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 130%;
+    color: #1C1C1C;
+}
+
+.hero-desc {
+    margin: 0;
+    margin-bottom: 34px;
+    width: 480px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 155%;
+    color: #787878;
+}
+
+.hero-button-secure {
+    flex-direction: column;
+}
+
+.hero-button {
+    margin-bottom: 14px;
+    min-width: 250px;
+    padding: 20px 60px;
+    border-radius: 3px;
+}
+
+.hero-secure {
+    align-self: center;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 155%;
+    color: #787878;
+    text-transform: uppercase;
+    background-image: url(../img/Vector-security.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+/* services */
+.services-h2 {
+    text-align: center;
+}
+
+.section-desc {
+    text-align: center;
+}
+
+.services-item {
+    padding: 60px 30px;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    min-height: 320px;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+}
+
+.services-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.services-item-icon {
+    margin-bottom: 25px;
+}
+
+.services-h3 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    color: #1C1C1C;
+}
+
+.services-desc {
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #787878;
+}
+
+/* article */
+.articles-list {
+    flex-wrap: wrap;
+}
+
+.articles-item {
+    width: 570px;
+    min-height: 180px;
+}
+
+.articles-item-1,
+.articles-item-2 {
+    margin-bottom: 30px;
+}
+
+.articles-blog-preview {
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    overflow: hidden; 
+}
+
+.articles-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+}
+
+.articles-blog-preview-text {
+    flex-direction: column;
+    padding: 30px;
+}
+
+.articles-blog-preview-image {
+    object-fit: cover;
+}
+
+.articles-time {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: #787878;
+}
+
+.articles-h3 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    color: #1C1C1C;
+}
+
+.articles-desc {
+    margin: 0;
+    width: 210px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #787878;
+}
+
+/* clients */
+.clients-list {
+    flex-wrap: wrap;
+}
+
+.client-item {
+    flex-direction: column;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    width: 370px;
+    padding: 50px 35px 30px;
+}
+
+.client-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.client-desc {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 280px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
+}
+
+.client-user {
+    align-items: center;
+    padding-top: 30px;
+    border-top: 1px solid #DADADA;
+}
+
+.client-avatar {
+    flex-shrink: 0;
+    width: 67px;
+    margin-right: 17px;
+}
+
+.client-avatar img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #3172B9;
+    border-radius: 100%;
+}
+
+.client-name {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 180%;
+    color: #1C1C1C;
+}
+
+.client-post {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
+}
+
+/* contacts */
+.h2-contact {
+    margin-bottom: 110px;
+}
+
+.contacts-address {
+    font-style: normal;
+}
+
+.contacts-item {
+    flex-direction: column;
+    width: 370px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-top: 50px;
+}
+
+.contacts-item-1 {
+    background-image: url(../img/contact-visit.svg);
+}
+
+.contacts-item-2 {
+    background-image: url(../img/contact-call.svg);
+}
+
+.contacts-item-3 {
+    background-image: url(../img/contact-mail.svg);
+}
+
+.contacts-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.contacts-item-caption {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 180%;
+    color: #1C1C1C;
+}
+
+.contacts-item-desc {
+    margin: 0;
+    width: 220px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
+}
+
+/*footer*/
+.footer {
+    padding: 42px 0;
+}
+
+.footer-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: 25px;
+}
+
+.footer-copy {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #787878;
+}
+
+.footer-nav {
+    margin-right: 55px;
+}
+
+.footer-item {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #787878;
+}
+
+.footer-item:not(:last-child) {
+    margin-right: 28px;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.social-link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.social-link-tw {
+    background-image: url(../img/footer-twitter.svg);
+}
+
+.social-link-linkedin {
+    background-image: url(../img/footer-in.svg);
+}
+
+.social-link-mail {
+    background-image: url(../img/footer-mail.svg);
+}
