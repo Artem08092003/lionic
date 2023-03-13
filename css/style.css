@@ -261,7 +261,7 @@ body {
 .articles-blog-preview {
     border: 1px solid #E4E4E4;
     border-radius: 5px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .articles-item:not(:nth-child(2n)) {
@@ -412,6 +412,101 @@ body {
     font-size: 14px;
     line-height: 180%;
     color: #787878;
+}
+
+/*join-us*/
+.join-us-h2 {
+    margin: 0;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.section-desc-join-us {
+    margin-bottom: 30px;
+}
+
+.form {
+    margin: 0 55px;
+    flex-wrap: wrap;
+}
+
+.form-top {
+    justify-content: space-between;
+    height: 140px;
+}
+
+.form-left {
+    width: 520px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-input {
+    width: 250px;
+    height: 60px;
+    padding: 15px 28px;
+    border: 1px solid #DADADA;
+    border-radius: 50px;
+}
+
+.form-input-1,
+.form-input-2 {
+    margin-bottom: 20px;
+}
+
+.form-select {
+    width: 250px;
+    height: 60px;
+    padding: 15px 28px;
+    border: 1px solid #DADADA;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.form-right {
+    width: 520px;
+}
+
+.form-text-area {
+    padding: 15px 28px;
+    width: 100%;
+    border: 1px solid #DADADA;
+    border-radius: 20px;
+    resize: none;
+}
+
+.form-bottom {
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+.form-bottom-wrapping {
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-join-us {
+    margin-bottom: 10px;
+    padding: 20px 67px;
+    border-radius: 50px;
+}
+
+.local-join-us-user-agreement {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #787878;
+    cursor: pointer;
+}
+
+.join-us-checkbox {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.local-join-us-user-agreement a {
+    border-bottom: 1px solid #3172B9;
+    color: #3172B9;
 }
 
 /*footer*/

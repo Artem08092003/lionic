@@ -340,6 +340,50 @@
                 </address>
             </div>
         </section>
+
+        <section id="join-us" class="section join-us-section-main">
+            <div class="container join-us-container">
+                <h2 class="h2 join-us-h2">
+                    join-us
+                </h2>
+                <p class="section-desc section-desc-join-us">
+                    Take control of your paid subscriptions today!
+                </p>
+                <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form">
+                    <div class="form-top flex">
+                        <div class="form-left flex">
+                            <input class="form-input form-input-1" name="name" placeholder="Name" type="text" required>
+                            <input class="form-input form-input-2" name="email" placeholder="E-mail" type="email"
+                                required>
+                            <input class="form-input" name="tel" placeholder="Phone" type="tel" required>
+                            <select class="form-select" name="country" required>
+                                <option value="Country" disabled selected>Country</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="United States">United States</option>
+                                <option value="France">France</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Estonia">Estonia</option>
+                            </select>
+                        </div>
+                        <div class="form-right flex">
+                            <textarea class="form-text-area" name="comment" placeholder="Comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-bottom flex">
+                        <div class="form-bottom-wrapping flex">
+                            <button class="button button-join-us" type="submit">
+                                Get Started
+                            </button>
+                            <label class="local-join-us-user-agreement">
+                                <input class="join-us-checkbox" type="checkbox" required>
+                                I agree with the <a href="#">user agreement</a>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
