@@ -944,7 +944,14 @@ body {
         margin-bottom: 15px;
     }
 
+    .hero-button-secure {
+        align-self: center;
+        width: 100%;
+        max-width: 300px;
+    }
+
     .hero-button {
+        width: 100%;
         padding: 19px 78px;
         margin-bottom: 15px;
     }
@@ -995,7 +1002,7 @@ body {
     }
 
     .articles-item {
-        width: calc((100% - (var(--gap) - 1)) / 1);
+        width: 100%;
         min-height: 191px;
     }
 
@@ -1005,7 +1012,7 @@ body {
 
     .blog-preview-link img {
         object-fit: cover;
-        width: 86px;
+        width: 29%;
     }
 
     .articles-blog-preview-text {
@@ -1025,13 +1032,19 @@ body {
         padding: 60px 0;
     }
 
+    .clients-list {
+        justify-content: center;
+    }
+
     .clients-h2 {
         margin-bottom: 15px;
     }
 
     .client-item {
-        width: calc((100% - (var(--gap) - 1)) / 1);
-    }
+        width: 100%;
+        max-width: 340px;
+        align-items: center;
+    } 
 
     .client-name {
         margin-bottom: 0;
