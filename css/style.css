@@ -830,8 +830,68 @@ body {
 }
 
 @media (max-width: 990px) {
+
+    .header-nav-menu {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        min-width: 250px;
+        height: 100vh;
+        z-index: 10;
+        padding: 40px;
+        box-shadow: 0 0 5px #787878;
+        background-color: #FFF;
+        overflow-y: auto;
+        visibility: hidden;
+        transform: translateX(-120%);
+        transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    }
+
     .header-nav-list {
-        display: none;
+        flex-direction: column;
+    }
+
+    .header-nav-item:not(:last-child) {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .header-nav-item a {
+        font-size: 18px;
+    }
+
+    .header-nav-menu--active {
+        visibility: visible;
+        transform: none;  
+    }
+
+    .header-nav-burger--active
+    .header-nav-burger:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header-nav-burger--active
+    .header-nav-burger:first-child {
+        left: 25%;
+        top: 50%;
+        transform: rotate(45deg);
+        transform-origin: center;
+        transition: transform 0.5s ease-in-out, top 0.5s ease-in-out, left 0.5s ease-in-out;
+    }
+
+    .header-nav-burger--active
+    .header-nav-burger:last-child {
+        bottom: auto;
+        left: 25%;
+        top: 50%;
+        transform: rotate(-45deg);
+        transform-origin: center;
+        transition: transform 0.5s ease-in-out, top 0.5s ease-in-out, left 0.5s ease-in-out;
+    }
+
+    .header-stop-scroll {
+        overflow: hidden;
     }
 
     .header-button {
@@ -866,7 +926,8 @@ body {
     }
 
     .header-nav-burger:nth-child(2) {
-        transform: translateX(-50%) translateY(-50%);
+        top: 49%;
+        transform: translateX(-50%) translateY(-28%);
     }
 
     .header-nav-burger:last-child {
@@ -940,10 +1001,6 @@ body {
 
     .header-logo {
         width: 80px;
-    }
-
-    .header-nav-menu {
-        display: none;
     }
 
     .hero-section-main {
