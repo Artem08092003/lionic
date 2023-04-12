@@ -462,6 +462,11 @@ body {
     transition: color 0.3s ease-in-out;
 }
 
+.article-center {
+    display: none;
+    text-align: center;
+}
+
 /* clients */
 .clients-list {
     flex-wrap: wrap;
@@ -1101,6 +1106,31 @@ body {
 
     .articles-h3 {
         margin-bottom: 3px;
+    }
+
+    .articles-list {
+        margin-bottom: 40px;
+    }
+
+    .article-center {
+        display: block;
+    }
+
+    .article-button {
+        padding: 10px 20px;
+        border-radius: 3px;
+    }
+
+    .articles-item:nth-last-child(-n+2) {
+        display: none;
+    }
+
+    .article-center--hidden {
+        display: none;
+    }
+
+    .articles-item.articles-item--visible {
+        display: block;
     }
 
     .clients-section-main {
