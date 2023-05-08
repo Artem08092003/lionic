@@ -1,3 +1,4 @@
+// Burger menu
 let burger = document.querySelector('.header-nav-burger-button');
 let menu = document.querySelector('.header-nav-menu');
 let menuLinks = menu.querySelectorAll('.header-nav-item a');
@@ -25,6 +26,8 @@ menuLinks.forEach(function (el) {
     });
 });
 
+
+//More BTN
 let btnMore = document.querySelector('.article-button');
 let articlesItem = document.querySelectorAll('.articles-item');
 
